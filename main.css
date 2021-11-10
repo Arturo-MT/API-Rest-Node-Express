@@ -1,0 +1,150 @@
+*{
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    background-color: rgb(45, 137, 218);
+}
+
+#app{
+    display: flex;
+    margin: 0;
+    background: transparent;
+}
+
+.form-main{
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgb(26, 97, 160);
+    padding: 20px;
+}
+
+.form-title{
+    text-align: center;
+    color: white;
+}
+
+.login-form p{
+    margin-bottom: 5px;
+}
+
+.div-usuario{
+    background-color: transparent;
+}
+
+.div-usuario p{
+    color: white;
+}
+
+.input-usuario{
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: rgb(45, 137, 218);
+}
+
+.input-usuario:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.div-contraseña{
+    background-color: transparent;
+}
+.div-contraseña p{
+    color: white;
+}
+
+.input-contraseña{
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: rgb(45, 137, 218);
+}
+
+.input-contraseña:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.div-submit{
+    background-color: transparent;
+}
+
+.submit{
+    padding: 10px;
+    background-color: rgb(45, 137, 218);
+    border: solid 0px;
+    width: 100%;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.submit:hover{
+    background-color: rgb(9, 112, 202);
+    color: white;
+    cursor: pointer;
+}
+
+body div{
+    flex-grow: 1;
+    background-color: aliceblue;
+    margin: 5px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#submit{
+    background-color: rgb(45, 137, 218);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 15px;
+    margin-left: 38px;
+    transition: all 0.3s ease;
+}
+
+#submit:disabled{
+    color: black;
+    background-color: #ccc;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: rgb(17, 109, 189);
+}
+
+#meals-list li{
+    transition: 0.3s ease;
+    margin-top: 5px;
+    width: 90%;
+}
+
+.selected{
+    background-color: rgb(45, 137, 218);
+}
+
+#meals-list li:hover{
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    background-color: rgb(45, 137, 218);
+    color: black;
+}
+
+.div-registro{
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.div-registro:hover{
+    color: white;
+    cursor: pointer;
+}

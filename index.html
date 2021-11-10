@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <title>FOODZI</title>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+<template id="register-template">
+    <div class="form-main">
+        <p class="form-title">REGISTER</p>
+        <form id="register-form" class="register-form">
+            <div class="div-usuario">
+                <p>e-Mail</p>
+                <input id="email-register" class="input-usuario" type="text">
+            </div>  
+            <div class="div-contraseña">
+                <p>Contraseña</p>
+                <input id="password-register" class="input-contraseña" type="password">
+            </div>
+            <div class="div-contraseña confirm">
+                <p>Confirme su contraseña</p>
+                <input id="password-confirmation" class="input-contraseña" type="password">
+            </div>
+            <div class="div-submit">
+                <input class="submit" type="submit" value="Registrarse">
+            </div>
+        </form>
+    </div>
+</template>
+<template id="login-template">
+    <div class="form-main">
+        <p class="form-title">LOGIN</p>
+        <form id="login-form" class="login-form">
+            <div class="div-usuario">
+                <p>e-Mail</p>
+                <input id="email" class="input-usuario" type="text">
+            </div>  
+            <div class="div-contraseña">
+                <p>Contraseña</p>
+                <input id="password" class="input-contraseña" type="password">
+            </div>
+            <div class="div-submit">
+                <input class="submit" type="submit" value="Iniciar sesión">
+            </div>
+        </form>
+        <div class="div-registro">
+            <p id="register-P">Registrarse</p>
+        </div>
+    </div>
+</template>
+<template id="orders-view">
+    <div id="meals">
+        <ul id="meals-list">
+            <p>Cargando...</p>
+        </ul>
+        <form id="order">
+            <input id="meals-id" type="hidden">
+            <input id="submit" type="submit" disabled>
+        </form>
+    </div>
+    <div id="orders">
+        <ul id="orders-list">
+            <p>Cargando...</p>
+        </ul>
+    </div>
+</template>
+    <script src="main.js"></script>
+</html>
